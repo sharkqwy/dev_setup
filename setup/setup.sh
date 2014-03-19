@@ -40,9 +40,12 @@ fi
 # Install vim
 sudo apt-get install vim
 git clone https://github.com/sharkqwy/novim.git
-ln -sb ~/novim/vimrc ~/.vimrc
+mv ~/novim ~/.vim
+ln -sb ~/.vim/vimrc ~/.vimrc
+cd ~/.vim
 git submodule init
 git submodule update
+cd ~
 
 # Init from dot files
 git clone https://github.com/sharkqwy/dotfiles.git
