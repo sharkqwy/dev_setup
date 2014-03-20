@@ -37,6 +37,9 @@ if [ -d ./dotfiles/ ]; then
     mv dotfiles dotfiles.old
 fi
 
+# Install ark-grep for vim
+sudo apt-get install ack-grep
+
 # Install vim
 sudo apt-get install vim
 git clone https://github.com/sharkqwy/novim.git
@@ -48,7 +51,6 @@ git submodule update
 cd ~
 
 # Init from dot files
-git clone https://github.com/sharkqwy/dotfiles.git
 ln -sb dotfiles/.bash_profile ~
 ln -sb dotfiles/.bashrc ~
 ln -sb dotfiles/.bashrc_custom ~
