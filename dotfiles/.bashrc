@@ -191,8 +191,8 @@ alias treeacl='tree -A -C -L 2'
 # 2.3) Text and editor commands
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
-export EDITOR='emacs -nw'
-export VISUAL='emacs -nw' 
+export EDITOR='vim'
+export VISUAL='vim' 
 
 # 2.4) grep options
 export GREP_OPTIONS='--color=auto'
@@ -201,8 +201,8 @@ export GREP_COLOR='1;31' # green for matches
 # 2.5) sort options
 # Ensures cross-platform sorting behavior of GNU sort.
 # http://www.gnu.org/software/coreutils/faq/coreutils-faq.html#Sort-does-not-sort-in-normal-order_0021
-unset LANG
-export LC_ALL=POSIX
+#unset LANG
+#export LC_ALL=POSIX
 
 # 2.6) Install rlwrap if not present
 # http://stackoverflow.com/a/677212
