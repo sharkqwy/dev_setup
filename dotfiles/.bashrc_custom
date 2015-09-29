@@ -1,1 +1,17 @@
 
+# User specific aliases and functions
+alias ddd="cd ~/deepdive"
+alias dmon="mongo db:30001/db_prod"
+alias amon="mongo data_mongo:29017"
+
+export PATH
+export PYENV_ROOT="/data/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export ETL_HOME=/home/kxia/deepdive
+export etl_home=/home/kxia/deepdive
+export EXTRACT_DATA_HOME=/data/tmp
+export extract_data_home=/data/tmp
+
+
